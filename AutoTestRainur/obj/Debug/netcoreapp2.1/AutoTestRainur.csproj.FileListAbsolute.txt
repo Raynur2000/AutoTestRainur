@@ -1,0 +1,15 @@
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/Mono.Cecil.dll
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/AutoTestRainur.deps.json
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/AutoTestRainur.runtimeconfig.json
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/AutoTestRainur.runtimeconfig.dev.json
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/AutoTestRainur.dll
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/bin/Debug/netcoreapp2.1/AutoTestRainur.pdb
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/obj/Debug/netcoreapp2.1/AutoTestRainur.csprojAssemblyReference.cache
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/obj/Debug/netcoreapp2.1/AutoTestRainur.csproj.CoreCompileInputs.cache
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/obj/Debug/netcoreapp2.1/AutoTestRainur.AssemblyInfoInputs.cache
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/obj/Debug/netcoreapp2.1/AutoTestRainur.AssemblyInfo.cs
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/obj/Debug/netcoreapp2.1/AutoTestRainur.dll
+/Users/raynurkhasanov/RiderProjects/AutoTestRainur/AutoTestRainur/obj/Debug/netcoreapp2.1/AutoTestRainur.pdb
