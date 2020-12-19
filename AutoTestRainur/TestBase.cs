@@ -20,15 +20,15 @@ namespace AutoTestRainur
         [SetUp]
         public void SetUp()
         {
-            app = new ApplicationManager();
+            app = ApplicationManager.GetInstance();        
         }
         
         
-        [TearDown]
-        public void TeardownTest()
-        {
-            app.Stop();
-        }
+//        [TearDown]
+//        public void TeardownTest()
+//        {
+//            app.Stop();
+//        }
 
         
     }

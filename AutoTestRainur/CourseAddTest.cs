@@ -11,9 +11,9 @@ public class CourseAddTestTest:TestBase {
   {
     AccountData user = new AccountData("admin2020", "RainurAdmin2000");
     app.Navigation.OpenHomePage();
-    app.Auth.Login(user);
+    app.Auth.LoginInAdminPanel(user);
     app.Navigation.OpenCourseAddingPage();    
     app.Course.AddCourse();
-    app.Auth.Logout();
+    //app.Auth.Logout();
   }
 }

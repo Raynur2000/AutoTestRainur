@@ -30,6 +30,15 @@ namespace AutoTestRainur
             driver.FindElement(By.XPath("//input[@id='password']")).SendKeys(user.Password);
             driver.FindElement(By.Name("login")).Click();
         }
+
+        public void LoginInAdminPanel(AccountData user)
+        {
+            driver.Navigate().GoToUrl("https://univer.tatar/admin/login/?next=/admin/");
+            driver.FindElement(By.Id("id_username")).SendKeys(user.Username);
+            driver.FindElement(By.Id("id_password")).Click();
+            driver.FindElement(By.Id("id_password")).SendKeys(user.Password);
+            driver.FindElement(By.Id("id_password")).SendKeys(Keys.Enter);
+        }
         
         public void Logout()
         {

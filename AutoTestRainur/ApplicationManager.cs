@@ -16,6 +16,7 @@ namespace AutoTestRainur
 {
     public class ApplicationManager
     {
+        private static ThreadLocal<ApplicationManager> app = new ThreadLocal<ApplicationManager>();
         private IWebDriver driver;
         public IJavaScriptExecutor js;
         private string baseURL;
@@ -27,9 +28,10 @@ namespace AutoTestRainur
         public IDictionary<string, object> vars {get; private set;}
 
         
-        public ApplicationManager()
+        private ApplicationManager()
         {
             driver = new ChromeDriver("/Users/raynurkhasanov/Downloads/");
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             js = (IJavaScriptExecutor)driver;
             vars = new Dictionary<string, object>();
             driver.Manage().Window.Size = new System.Drawing.Size(1280, 777);
@@ -38,6 +40,29 @@ namespace AutoTestRainur
             navigation = new NavigationHelper(this, baseURL);
             course = new CourseHelper(this);
             
+        }
+        
+        ~ApplicationManager()
+        {
+            try
+            {
+                driver.Quit();
+            }
+            catch (Exception)
+            {
+                //ignore
+            }
+        }
+
+        public static ApplicationManager GetInstance()
+        {
+            if (!app.IsValueCreated)
+            {
+                ApplicationManager newInstance = new ApplicationManager();
+                newInstance.Navigation.OpenHomePage();
+                app.Value = newInstance;
+            }
+            return app.Value;
         }
         
         public void Stop()

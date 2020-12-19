@@ -47,6 +47,8 @@ namespace AutoTestRainur
             driver.FindElement(By.Id("id_short_description")).SendKeys("Краткое описание курса ");
             driver.FindElement(By.Name("_save")).Click();
         }
+        
+        
 
     }
 }
