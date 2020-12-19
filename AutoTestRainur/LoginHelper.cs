@@ -24,17 +24,17 @@ namespace AutoTestRainur
         public void Login(AccountData user)
         {
             driver.FindElement(By.CssSelector(".uk-navbar-transparent > #tm-show-on-mobile .uk-visible\\@m")).Click();
-            driver.FindElement(By.Id("id_username")).Click();
-            driver.FindElement(By.Id("id_username")).SendKeys(user.Username);
-            driver.FindElement(By.Id("password")).Click();
-            driver.FindElement(By.Id("password")).SendKeys(user.Password);
+            driver.FindElement(By.XPath("//input[@id='id_username']")).Click();
+            driver.FindElement(By.XPath("//input[@id='id_username']")).SendKeys(user.Username);
+            driver.FindElement(By.XPath("//input[@id='password']")).Click();
+            driver.FindElement(By.XPath("//input[@id='password']")).SendKeys(user.Password);
             driver.FindElement(By.Name("login")).Click();
         }
         
         public void Logout()
         {
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-            driver.FindElement(By.CssSelector("a:nth-child(4)")).Click();
+            driver.FindElement(By.CssSelector(".uk-navbar-transparent > #tm-show-on-mobile a > .uk-border-circle")).Click();
+            driver.FindElement(By.LinkText("Чыгу")).Click();
         }
     }
 }
