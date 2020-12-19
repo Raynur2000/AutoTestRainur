@@ -15,23 +15,21 @@ namespace AutoTestRainur
 {
     public class TestBase
     {
-        public IWebDriver driver;
-        public IDictionary<string, object> vars {get; private set;}
-        public IJavaScriptExecutor js;
-        
-        [SetUp]
-        public void SetUp() {
-            driver = new ChromeDriver("/Users/raynurkhasanov/Downloads/");
-            js = (IJavaScriptExecutor)driver;
-            vars = new Dictionary<string, object>();
-            driver.Manage().Window.Size = new System.Drawing.Size(1280, 777);
+        protected ApplicationManager app;
 
+        [SetUp]
+        public void SetUp()
+        {
+            app = new ApplicationManager();
         }
+        
         
         [TearDown]
-        protected void TearDown() {
-            driver.Quit();
+        public void TeardownTest()
+        {
+            app.Stop();
         }
+
         
     }
 }

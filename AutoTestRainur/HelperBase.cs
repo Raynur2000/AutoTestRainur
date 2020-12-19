@@ -1,4 +1,3 @@
-// Задание 2 
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,17 +10,20 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
-using AutoTestRainur;
 
-[TestFixture]
-public class LoginAndLogout2Test:TestBase {
-    
-    [Test]
-    public void loginAndLogout2Test()
+namespace AutoTestRainur
+{
+    public class HelperBase
     {
-        app.Navigation.OpenHomePage();
-        AccountData user = new AccountData("admin2020", "RainurAdmin2000");
-        app.Auth.Login(user);
-        app.Auth.Logout();
+        protected IWebDriver driver;
+        public IJavaScriptExecutor js;
+        protected ApplicationManager manager;
+
+        public HelperBase(ApplicationManager manager)
+        {
+            this.manager = manager;
+            this.driver = manager.Driver;
+        }
+
     }
 }

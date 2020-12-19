@@ -12,11 +12,16 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="AutoTestRainur" t="IncludeRecursive">
         <e p="AccountData.cs" t="Include" />
+        <e p="ApplicationManager.cs" t="Include" />
         <e p="AutoTestRainur.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CourseAddTest.cs" t="Include" />
+        <e p="CourseHelper.cs" t="Include" />
+        <e p="HelperBase.cs" t="Include" />
         <e p="LoginAndLogout1Test.cs" t="Include" />
         <e p="LoginAndLogout2Test.cs" t="Include" />
+        <e p="LoginHelper.cs" t="Include" />
+        <e p="NavigationHelper.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.1" t="Include">
